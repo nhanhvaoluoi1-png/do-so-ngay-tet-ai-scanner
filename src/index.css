@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-festive-red: #D40000;
+  --color-festive-gold: #FFD700;
+  --color-festive-dark: #8B0000;
+}
+
+body {
+  @apply bg-[#8B0000] text-[#141414];
+  background-image: radial-gradient(circle at 50% 50%, #B22222 0%, #8B0000 100%);
+  min-height: 100vh;
+}
+
+.scanner-line {
+  @apply absolute left-0 right-0 h-1 bg-festive-gold z-10;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+  animation: scan 3s linear infinite;
+}
+
+.festive-card {
+  @apply bg-white/95 backdrop-blur-sm border-2 border-[#FFD700]/30 rounded-3xl shadow-2xl;
+}
+
+.lantern-swing {
+  animation: swing 3s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+@keyframes swing {
+  0% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  100% { transform: rotate(-5deg); }
+}
+
+@keyframes scan {
+  0% { top: 0; }
+  50% { top: 100%; }
+  100% { top: 0; }
+}

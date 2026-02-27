@@ -1,0 +1,21 @@
+{
+  "name": "Dò Số Ngày Tết - AI Scanner",
+  "short_name": "Dò Số Tết",
+  "description": "Ứng dụng dò vé số thông minh bằng AI cho dịp Tết Nguyên Đán",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#8B0000",
+  "theme_color": "#D40000",
+  "icons": [
+    {
+      "src": "https://picsum.photos/id/10/192/192",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://picsum.photos/id/10/512/512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

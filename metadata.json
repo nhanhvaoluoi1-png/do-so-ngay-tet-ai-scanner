@@ -1,0 +1,5 @@
+{
+  "name": "Dò Số Ngày Tết - AI Scanner",
+  "description": "Ứng dụng dò vé số thông minh bằng AI cho dịp Tết Nguyên Đán. Tự động nhận diện số, đài và đối chiếu kết quả trúng thưởng nhanh chóng.",
+  "requestFramePermissions": ["camera"]
+}
